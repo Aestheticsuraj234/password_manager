@@ -149,3 +149,44 @@ Certainly! Here's a brief overview of the basics of JavaScript along with some d
   ```
 
 This overview covers the basics of JavaScript. As you progress, you can explore more advanced topics like closures, prototypes, ES6 features, and frameworks/libraries like React or Node.js.
+
+
+```javascript
+
+ e.preventDefault();
+
+    // get input values✅
+    const WebsiteName = document.getElementById('website').value;
+    const UserName = document.getElementById('username').value;
+    const Password = document.getElementById('password').value;
+
+    // add validations✅
+    if (!WebsiteName || !UserName || !Password) {
+        alert("Bhai kya krha hai saare fields bhar de🙄");
+        return;
+    }
+
+    const Data_to_store = {
+        WebsiteName,
+        UserName,
+        Password
+    }
+    // check is our local storage is empty or not
+
+    if (localStorage.getItem("Password_Data") === null) {
+        const Password_Data = []; // empty array
+        Password_Data.push(Data_to_store);
+        localStorage.setItem("Password_Data", JSON.stringify(Password_Data));
+    }
+    else {
+        const Password_Data = JSON.parse(localStorage.getItem("Password_Data"));
+        Password_Data.push(Data_to_store);
+        localStorage.setItem("Password_Data", JSON.stringify(Password_Data));
+    }
+    alert("Data Stored Successfully");
+    document.getElementById('website').value = "";
+    document.getElementById('username').value = "";
+    document.getElementById('password').value = "";
+
+
+```
