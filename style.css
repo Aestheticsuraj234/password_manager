@@ -1,0 +1,240 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+
+/* Reset some default styles */
+body, ul {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Apply basic styling to the navbar */
+.navbar-main-section {
+    background-color: #f9f8f8;
+    color: #616682;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand-link {
+    text-decoration: none;
+    color: #393b4a;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand-image {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.navbar-links-list {
+    list-style: none;
+    display: flex;
+    gap:15px;
+}
+
+.navbar-links-item {
+    margin-right: 15px;
+}
+
+.navbar-links-link {
+    text-decoration: none;
+    color: #393b4a;
+    font-weight: 600;
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+    .navbar-main-section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links {
+        margin-top: 10px;
+    }
+
+    .navbar-links-list {
+        flex-direction: column;
+    }
+
+    .navbar-links-item {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+}
+
+
+/* Main Section */
+/* Apply basic styling to the main section */
+.main-section {
+    text-align: center;
+    padding: 50px;
+}
+
+.main-section-heading-text {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.main-section-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-section-content-text {
+    flex: 1;
+    text-align: left;
+}
+
+.main-section-content-text-para {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.5;
+}
+
+.main-section-content-image {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.main-section-content-image-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* style for the table section */
+/* Apply basic styling to the main section table */
+.main-section-table {
+    margin-top: 30px;
+    overflow-x: auto;
+}
+
+.main-section-table-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.main-section-table-table-head {
+    background-color: #333;
+    color: #fff;
+}
+
+.main-section-table-table-head-row {
+    font-weight: bold;
+}
+
+.main-section-table-table-head-row-item,
+.main-section-table-table-body-row-item {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.main-section-table-table-body-row-item {
+    text-align: center;
+}
+
+.main-section-table-table-body-row-item-input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+    font-size: medium;
+    font-weight: 600;
+}
+
+.main-section-table-table-body-row-item-button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+/* Responsive buttons */
+@media screen and (max-width: 768px) {
+    .main-section-table-table-body-row-item-button {
+        padding: 5px;
+        font-size: 12px;
+    }
+}
+
+
+/* Form Section Css */
+/* Apply basic styling to the form section */
+.form-section {
+    text-align: center;
+    padding: 50px;
+}
+
+.form-section-heading-text {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.form-section-content-form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.form-section-content-form-group {
+    margin-bottom: 20px;
+}
+
+.form-section-content-form-group-label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.form-section-content-form-group-input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.form-section-content-form-group-button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+/* Hover effect for the button */
+.form-section-content-form-group-button:hover {
+    background-color: #45a049;
+}
+
+
+.footer-main-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px 10px;
+}

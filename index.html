@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PassX - Your Personal Password Manager</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- Navbar coming Here -->
+    <nav class="navbar-main-section">
+        <div class="navbar-brand">
+            <a href="index.html" class="navbar-brand-link">
+                <img src="logo.png" alt="PassX" class="navbar-brand-image">
+
+            </a>
+        </div>
+        <div class="navbar-links">
+            <ul class="navbar-links-list">
+                <li class="navbar-links-item">
+                    <a href="index.html" class="navbar-links-link">Home</a>
+                </li>
+                <li class="navbar-links-item">
+                    <a href="about.html" class="navbar-links-link">About</a>
+                </li>
+                <li class="navbar-links-item">
+                    <a href="contact.html" class="navbar-links-link">Contact</a>
+                </li>
+                <li class="navbar-links-item">
+                    <a href="login.html" class="navbar-links-link">Login</a>
+                </li>
+                <li class="navbar-links-item">
+                    <a href="signup.html" class="navbar-links-link">Sign Up</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main section Coming Here -->
+    <div class="main-section">
+        <div class="main-section-heading">
+            <h1 class="main-section-heading-text">Your Personal Password Manager</h1>
+        </div>
+        <div class="main-section-content">
+            <div class="main-section-content-text">
+                <p class="main-section-content-text-para">
+                    PassX is a password manager that allows you to store all your passwords in one place. It uses a
+                    master password to encrypt all your passwords and store them in a database. You can access your
+                    passwords from anywhere in the world.
+                </p>
+            </div>
+            <div class="main-section-content-image">
+                <img src="main-section-image.png" alt="PassX" class="main-section-content-image-img">
+            </div>
+        </div>
+        <!-- table to show saved Password (website , username , password , action) -->
+        <div class="main-section-table">
+            <table class="main-section-table-table">
+                <thead class="main-section-table-table-head">
+                    <tr class="main-section-table-table-head-row">
+                        <th class="main-section-table-table-head-row-item">Website</th>
+                        <th class="main-section-table-table-head-row-item">Username</th>
+                        <th class="main-section-table-table-head-row-item">Password</th>
+                        <th class="main-section-table-table-head-row-item">Action</th>
+                    </tr>
+                </thead>
+                <tbody class="main-section-table-table-body">
+                    <tr class="main-section-table-table-body-row">
+                        <td class="main-section-table-table-body-row-item"></td>
+                        <td class="main-section-table-table-body-row-item">
+                            <input type="text" class="main-section-table-table-body-row-item-input" value="" readonly>
+                        </td>
+                        <td class="main-section-table-table-body-row-item">
+                            <input type="password" class="main-section-table-table-body-row-item-input" value=""
+                                readonly>
+                        </td>
+                        <td class="main-section-table-table-body-row-item">
+                            <button class="main-section-table-table-body-row-item-button">Show</button>
+                            <button class="main-section-table-table-body-row-item-button">Delete</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <!-- Form For Saving Password -->
+    <div class="form-section">
+        <div class="form-section-heading">
+            <h1 class="form-section-heading-text">Save Your Password</h1>
+        </div>
+        <div class="form-section-content">
+            <form action="" class="form-section-content-form">
+                <div class="form-section-content-form-group">
+                    <label for="website" class="form-section-content-form-group-label">Website</label>
+                    <input type="text" class="form-section-content-form-group-input" id="website"
+                        placeholder="Enter Website Name">
+                </div>
+                <div class="form-section-content-form-group">
+                    <label for="username" class="form-section-content-form-group-label">Username</label>
+                    <input type="text" class="form-section-content-form-group-input" id="username"
+                        placeholder="Enter Username">
+                </div>
+                <div class="form-section-content-form-group">
+                    <label for="password" class="form-section-content-form-group-label">Password</label>
+                    <input type="password" class="form-section-content-form-group-input" id="password"
+                        placeholder="Enter Password">
+                </div>
+                <div class="form-section-content-form-group">
+                    <button class="form-section-content-form-group-button">Save Password</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+    
+    <footer class="footer-main-section">
+        Copyright - All rights reserved | 2024-25
+    </footer>
+    
+        <script src="main.js"></script>
+</body>
+
+</html>
